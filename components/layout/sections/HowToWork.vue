@@ -1,6 +1,6 @@
 <template>
   <ui-base-container>
-    <h4 class="sub-title">Qanday ishlaydi?</h4>
+    <ui-title-badge title="Qanday ishlaydi?"></ui-title-badge>
     <h2 class="title">Ilovadan foydalanish uchun</h2>
     <div class="content">
       <div class="content-card">

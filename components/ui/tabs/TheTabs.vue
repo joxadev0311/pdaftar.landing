@@ -13,7 +13,13 @@
     </div>
     <div class="tab-content">
       <div class="photo" v-for="tab in tabs" :key="tab.name">
-        <img v-if="tab.selected" :src="tab.photo" :alt="tab.name" />
+        <img
+          v-if="tab.selected"
+          :src="tab.photo"
+          :alt="tab.name"
+          width="515 2451"
+          height="682 3285"
+        />
       </div>
     </div>
   </div>
@@ -35,7 +41,7 @@ export default {
           description:
             "Sizda do'kon(lar)ingizdagi qarzdorlik balanslarini 1 necha clicklarda ko'ra olasiz.",
           photo:
-            "https://ik.imagekit.io/pdaftar/Pdaftar/icon/debt-section?updatedAt=1723398410141",
+            "https://ik.imagekit.io/pdaftar/Pdaftar/compressed/Umumiy%20balans.webp?updatedAt=1727540988651",
           selected: true,
         },
         {
@@ -44,7 +50,7 @@ export default {
           description:
             "Siz pDaftarni ishlatish orqali kimga qachon qancha qarz berganizni hech qachon unitmaysiz.",
           photo:
-            "https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "https://ik.imagekit.io/pdaftar/Pdaftar/compressed/Oldi-berdi%20tarixlari.webp?updatedAt=1727540989008",
 
           selected: false,
         },
@@ -54,7 +60,7 @@ export default {
           description:
             "pDaftar internetsiz joylardayam muommosiz ishlaydi! Qachonki internetga ulanganizda yangi ma'lumotlarni Bazaga yuklab boradi",
           photo:
-            "https://ik.imagekit.io/pdaftar/Pdaftar/icon/debt-section?updatedAt=1723398410141",
+            "https://ik.imagekit.io/pdaftar/Pdaftar/compressed/Offline%20ishlash%20rejimi.webp?updatedAt=1727540988997",
 
           selected: false,
         },
@@ -64,7 +70,7 @@ export default {
           description:
             "Qarzlarni turli xil daftarlarda qayd qilib borasiz va qachon qaysi daftarga yozganingizni unutib qo’yasiz yoki daftar yo’qolib qolsa muammo bo’lishi aniq. Bunday vaziyatda pdaftar sizga ko’makchi",
           photo:
-            "https://ik.imagekit.io/pdaftar/Pdaftar/icon/debt-section?updatedAt=1723398410141",
+            "https://ik.imagekit.io/pdaftar/Pdaftar/compressed/Qarzdorliklarning%20esdan%20chiqishi.webp?updatedAt=1727540989103",
 
           selected: false,
         },
@@ -74,7 +80,7 @@ export default {
           description:
             "Bizning platformamizda bir nechta sotuvchilar orqali o'z savdolaringizni boshqarishingiz mumkin.",
           photo:
-            "https://ik.imagekit.io/pdaftar/Pdaftar/icon/debt-section?updatedAt=1723398410141",
+            "https://ik.imagekit.io/pdaftar/Pdaftar/compressed/Sotuvchilarni%20boshqarish.webp?updatedAt=1727540988711",
 
           selected: false,
         },
@@ -102,5 +108,36 @@ export default {
   justify-content: space-between;
   padding-top: 5rem;
   gap: 2rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .tabs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab-item {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    max-height: 184px;
+    overflow: auto;
+  }
+}
+/* 768 */
+@media screen and (max-width: 768px) {
+  .tab-item {
+    gap: 8px;
+  }
+  .tab-item {
+    max-height: 148px;
+  }
+  .photo img {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>

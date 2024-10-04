@@ -1,12 +1,12 @@
 <template>
   <ui-base-container>
-    <h4 class="sub-title">Tariflar</h4>
+    <ui-title-badge title="Tariflar"></ui-title-badge>
     <h2 class="title">Eng asosiysi pDaftar qulay narxlarda</h2>
     <div class="pricing-container">
       <div class="pricing-nav">
         <span class="month">Oylik</span>
-        <button class="toggle-pricing">
-          <div class="circle"></div>
+        <button class="toggle-pricing" @click="toggleDiscount">
+          <div :class="['circle', { active: pricingStatus }]"></div>
         </button>
         <span class="year">Yillik (Chegirma 10%)</span>
       </div>
@@ -105,13 +105,13 @@
             <li>
               <h5 style="background-color: #effcf2; color: #077f2e">Valyuta</h5>
               <span class="currency-value"
-                >{{ premiumPrice }}<span>$</span></span
+                >{{ computedDiscount.usd }}<span>$</span></span
               >
             </li>
             <li>
               <h5 style="background-color: #fef9ea; color: #b54d09">So'm</h5>
               <span class="currency-value"
-                >{{ uzsPrice }} <span>UZS</span></span
+                >{{ computedDiscount.uzs }} <span>UZS</span></span
               >
             </li>
           </div>
@@ -186,7 +186,9 @@
           <p class="target-audience">Professional biznes egalari uchun</p>
           <p>Sizga bundan ham ko’proqlarini taklif qilishimizni istaysizmi?</p>
           <h3>+998 71 123 45 67</h3>
-          <ui-base-button set-class="pricing-button"
+          <ui-base-button
+            set-class="pricing-button"
+            style="background-color: #182230"
             >Hoziroq bog’lanish</ui-base-button
           >
         </div>
@@ -202,7 +204,10 @@ export default {
       premiumStatus: false,
       freeStatus: true,
       premiumPrice: 2,
+      pricingStatus: false,
+      originalPrice: 0,
       uzsPrice: 0,
+      discountValue: 10 / 100,
     };
   },
   methods: {
@@ -226,6 +231,23 @@ export default {
         .catch((error) => {
           console.log(error);
         });
+    },
+    toggleDiscount() {
+      this.pricingStatus = !this.pricingStatus;
+    },
+  },
+  computed: {
+    computedDiscount() {
+      if (this.pricingStatus) {
+        return {
+          uzs:
+            Math.round(this.uzsPrice - this.uzsPrice * this.discountValue) * 10,
+          usd:
+            (this.premiumPrice - this.premiumPrice * this.discountValue) * 10,
+        };
+      } else {
+        return { uzs: this.uzsPrice, usd: this.premiumPrice };
+      }
     },
   },
   created() {
@@ -292,16 +314,22 @@ export default {
     drop-shadow(0px 1px 3px rgba(13, 16, 23, 0.12));
 }
 
+.toggle-pricing .circle.active {
+  transform: translateX(1.4rem);
+}
+
 .pricing-card {
   border-radius: 0.625rem;
   border: 1px solid #6938ef;
   background: #fff;
   display: flex;
+  min-width: 380px;
   padding: 1.25rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.25rem;
   flex: 1 0 0;
+  width: 100%;
 }
 .pricing-card.korparativ {
   text-align: start;
@@ -420,5 +448,24 @@ export default {
 .opacity {
   opacity: 0;
   visibility: hidden;
+}
+/* 680 */
+@media screen and (max-width: 680px) {
+  .pricing-card {
+    min-width: unset;
+  }
+}
+
+/* 480 */
+@media screen and (max-width: 480px) {
+  .pricing-nav {
+    margin-top: 12px;
+  }
+  .pricing-list {
+    flex-direction: column;
+  }
+  .features-list li p {
+    text-align: start;
+  }
 }
 </style>

@@ -232,14 +232,26 @@
       <section class="how-to-work" id="how-to-work">
         <LayoutSectionsHowToWork></LayoutSectionsHowToWork>
       </section>
-      <section class="problem-solution">
+      <section class="problem-solution" id="problem-solution">
         <LayoutSectionsProblemSolution></LayoutSectionsProblemSolution>
       </section>
-      <section class="app-feature">
+      <section class="app-feature" id="app-feature">
         <LayoutSectionsAppFeature></LayoutSectionsAppFeature>
       </section>
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <LayoutSectionsThePricing></LayoutSectionsThePricing>
+      </section>
+      <section class="testimonial-section" id="testimonial-section">
+        <LayoutSectionsTestimonial></LayoutSectionsTestimonial>
+      </section>
+      <section class="faq-section" id="faq-section">
+        <LayoutSectionsFaq></LayoutSectionsFaq>
+      </section>
+      <section class="send-question-section" id="send-question-section">
+        <LayoutSectionsSendQuestion></LayoutSectionsSendQuestion>
+      </section>
+      <section class="app-down-section" id="app-down-section">
+        <LayoutSectionsAppdown></LayoutSectionsAppdown>
       </section>
     </main>
     <footer>
@@ -284,6 +296,9 @@ export default {
   list-style: none;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: "DM Sans", sans-serif;
@@ -293,6 +308,12 @@ body {
 }
 ul {
   padding: 0;
+}
+.title {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.75rem;
 }
 header {
   width: 100%;
@@ -404,9 +425,37 @@ header.sticky {
     height: auto;
   }
 }
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 2.5rem !important;
+    line-height: 3.8rem !important;
+  }
+}
+/* 768 */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
+}
 @media screen and (max-width: 480px) {
   .intro {
-    height: 65rem;
+    height: 50rem;
   }
+  .title {
+    font-size: 1.5rem !important;
+    line-height: 1.7rem !important;
+  }
+  .pricing {
+    padding: 4rem 0;
+  }
+  /* .intro .rectangle-bottom,
+  .intro .rectangle-right,
+  .intro .rectangle-left,
+  .intro .rectangle-left::after,
+  .intro .rectangle-left::before,
+  .intro .rectangle-bottom::after {
+    display: none;
+  } */
 }
 </style>

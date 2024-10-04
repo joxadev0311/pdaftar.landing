@@ -149,7 +149,6 @@ export default {
 .container {
   position: absolute;
   z-index: 1;
-  /* max-width: 100%; */
   width: 100%;
   min-height: 54rem;
   height: auto;
@@ -342,6 +341,12 @@ export default {
   }
   .get-app .down-app {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .customer-satisfaction {
+    margin-top: 2rem;
   }
 }
 

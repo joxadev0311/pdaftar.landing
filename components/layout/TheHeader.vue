@@ -70,14 +70,14 @@
       <nav>
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#!" class="nav-link">Qanday ishlaydi?</a>
+            <a href="#how-to-work" class="nav-link">Qanday ishlaydi?</a>
           </li>
           <li class="nav-item">
-            <a href="#!" class="nav-link">Muammo va yechimlar</a>
+            <a href="#problem-solution" class="nav-link">Muammo va yechimlar</a>
           </li>
-          <li class="nav-item"><a href="#!" class="nav-link">Tariflar</a></li>
-          <li class="nav-item"><a href="#!" class="nav-link">Fikrlar</a></li>
-          <li class="nav-item"><a href="#!" class="nav-link">KSS</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Tariflar</a></li>
+          <li class="nav-item"><a href="#testimonial-section" class="nav-link">Fikrlar</a></li>
+          <li class="nav-item"><a href="#faq-section" class="nav-link">KSS</a></li>
         </ul>
       </nav>
 
@@ -89,7 +89,6 @@
           aria-expanded="false"
         >
           UZ
-          <!-- Pastga yo'naltirilgan o'q belgisi -->
         </ui-base-button>
         <ul class="dropdown-menu">
           <li><a href="/uz" data-lang="uz">UZ</a></li>

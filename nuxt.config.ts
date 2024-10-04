@@ -24,6 +24,8 @@ export default defineNuxtConfig({
       },
     },
   },
+  css: ["@/assets/scss/main.scss"],
+  modules: ["nuxt-swiper"],
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
 });

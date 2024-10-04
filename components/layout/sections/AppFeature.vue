@@ -1,6 +1,6 @@
 <template>
   <ui-base-container>
-    <h4 class="sub-title">Ilova qulayliklari</h4>
+    <ui-title-badge title="Ilova qulayliklari"></ui-title-badge>
     <h2 class="title">Qarzlarni hisoblash endi sizni qo'rqitmaydi</h2>
     <div class="tabs">
       <the-tabs></the-tabs>
@@ -42,5 +42,12 @@ export default {
   font-size: 3rem;
   font-weight: 700;
   line-height: 3.75rem;
+}
+
+/* 480 */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 4rem 0;
+  }
 }
 </style>
