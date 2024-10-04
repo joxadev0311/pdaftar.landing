@@ -28,17 +28,6 @@ export default {
   methods: {
     toggleTab() {
       this.$emit("toggle-tab", this.id);
-      
-      // h4 elementini markazga olib kelish
-      // this.$nextTick(() => {
-      //   if (this.$refs.tabTitle) {
-      //     this.$refs.tabTitle.scrollIntoView({
-      //       behavior: 'smooth',
-      //       block: 'center', // Markazda joylash
-      //       inline: 'nearest'
-      //     });
-      //   }
-      // });
     },
   },
 };
