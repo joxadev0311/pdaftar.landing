@@ -1,31 +1,16 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
+  ssr: true, // Server-side rendering yoqilgan
   app: {
     head: {
-      // title:
-      //   process.env.NODE_ENV === "development"
-      //     ? "Pdaftar - Test"
-      //     : "Pdaftar Pro",
-      title: "Pdaftar",
+      title:
+        process.env.NODE_ENV === "development"
+          ? "Pdaftar - Test"
+          : "Pdaftar Pro",
       titleTemplate: "%s | Qarzlarni oson boshqaring",
     },
   },
-  $development: {
-    app: {
-      head: {
-        title: "Pdaftar - Dev",
-      },
-    },
-  },
-  $production: {
-    app: {
-      head: {
-        title: "Pdaftar - Pro",
-      },
-    },
-  },
-  css: ["@/assets/scss/main.scss"],
-  modules: ["nuxt-swiper"],
-  compatibilityDate: "2024-04-03",
-  devtools: { enabled: true },
+  css: ["@/assets/scss/main.scss"], // Global CSS fayllar
+  modules: ["nuxt-swiper"], // Nuxt Swiper moduli
+  devtools: { enabled: true }, // Ishlab chiqish vositalari yoqilgan
 });
