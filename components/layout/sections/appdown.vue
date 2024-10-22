@@ -1,5 +1,5 @@
 <template>
-  <div class="app-down">
+  <div class="app-down" id="app-down">
     <ui-base-container>
       <div class="app-down-hero">
         <picture>
@@ -21,7 +21,7 @@
         <div class="app-download">
           <ul>
             <li>
-              <a href="https://apps.apple.com/vg/app/pdaftar/id6511237681">
+              <a href="https://itap.uz/scan/19">
                 <picture>
                   <img
                     src="https://ik.imagekit.io/pdaftar/Pdaftar/Mobile%20app%20store%20badge.svg?updatedAt=1727495196798"
@@ -32,7 +32,7 @@
             </li>
             <li>
               <a
-                href="https://play.google.com/store/apps/details?id=uz.app.pdaftaruz&pcampaignid=web_share"
+                href="https://itap.uz/scan/13"
               >
                 <picture>
                   <img

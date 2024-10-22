@@ -37,7 +37,7 @@ export default {
       tabs: [
         {
           id: 1,
-          name: "Umumiy balansni ko'rish",
+          name: "Umumiy qarz",
           description:
             "Sizda do'kon(lar)ingizdagi qarzdorlik balanslarini 1 necha clicklarda ko'ra olasiz.",
           photo:
@@ -56,7 +56,7 @@ export default {
         },
         {
           id: 3,
-          name: "Offline ham ishlash rejimi",
+          name: "Offline ham ishlash rejimi(Tez kunda)",
           description:
             "pDaftar internetsiz joylardayam muommosiz ishlaydi! Qachonki internetga ulanganizda yangi ma'lumotlarni Bazaga yuklab boradi",
           photo:

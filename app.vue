@@ -242,7 +242,7 @@
         <LayoutSectionsThePricing></LayoutSectionsThePricing>
       </section>
       <section class="testimonial-section" id="testimonial-section">
-        <LayoutSectionsTestimonial></LayoutSectionsTestimonial>
+        <!-- <LayoutSectionsTestimonial></LayoutSectionsTestimonial> -->
       </section>
       <section class="faq-section" id="faq-section">
         <LayoutSectionsFaq></LayoutSectionsFaq>

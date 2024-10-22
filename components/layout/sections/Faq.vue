@@ -97,7 +97,7 @@ export default {
         {
           title: "Bu qancha turadi?",
           content:
-            "Dastur imkoniyatlarini foydalanish uchun 2 xil tariff dan foydalanishingiz mumkin. Bepul - tajribasiz biznesmen, Pullik - Tajribali biznesmen. Tariflar",
+            "Dastur imkoniyatlarini foydalanish uchun 2 xil tariff dan foydalanishingiz mumkin. Bepul - yosh biznesmen, Pullik - Tajribali biznesmen. Tariflar",
         },
       ],
     };
@@ -127,6 +127,7 @@ export default {
   flex-direction: column;
   .title {
     margin-bottom: 20px;
+    margin-top: 96px;
   }
   .sub-title {
     color: #475467;

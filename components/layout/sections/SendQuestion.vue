@@ -11,7 +11,7 @@
         </picture>
       </div>
       <div class="nav">
-        <h2 class="title">Sizda ham savolaringiz bormi?</h2>
+        <h2 class="title">Sizda ham savollaringiz* bormi?</h2>
         <h4 class="sub-title">
           Bizga o’z savollaringizni yuboring. Albatta javob qaytaramiz
         </h4>

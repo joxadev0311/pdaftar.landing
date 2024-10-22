@@ -67,17 +67,17 @@
               </svg>
             </picture>
           </a>
-          <p class="description">Ishonchli yordamchi</p>
+          <p class="description">Ishonchli va Qulay yordamchi</p>
           <ul class="nav-menu">
             <li class="nav-item">
-              <a href="" class="nav-link">Qanday ishlaydi?</a>
+              <a href="#how-to-work" class="nav-link">Qanday ishlaydi?</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Ilova qulayliklari</a>
+              <a href="#problem-solution" class="nav-link">Ilova qulayliklari</a>
             </li>
-            <li class="nav-item"><a href="" class="nav-link">Tariflar</a></li>
+            <li class="nav-item"><a href="#pricing" class="nav-link">Tariflar</a></li>
             <li class="nav-item">
-              <a href="" class="nav-link">Mijozlar biz haqimizda</a>
+              <!-- <a href="" class="nav-link">Mijozlar biz haqimizda</a> -->
             </li>
             <li class="nav-item"><a href="" class="nav-link">Aloqa</a></li>
           </ul>
@@ -87,7 +87,7 @@
             <li class="down-item">Mobil ilova</li>
             <li class="down-item">
               <a
-                href="https://apps.apple.com/vg/app/pdaftar/id6511237681"
+                href="https://itap.uz/scan/19"
                 class="down-link"
               >
                 <picture>
@@ -100,7 +100,7 @@
             </li>
             <li class="down-item">
               <a
-                href="https://play.google.com/store/apps/details?id=uz.app.pdaftaruz&pcampaignid=web_share"
+                href="https://itap.uz/scan/13"
                 class="down-link"
               >
                 <picture>

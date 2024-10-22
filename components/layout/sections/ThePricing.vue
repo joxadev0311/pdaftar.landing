@@ -13,7 +13,7 @@
       <div class="pricing-box">
         <div class="pricing-card">
           <div class="card-nav">
-            <h4 class="card-title">Free</h4>
+            <h4 class="card-title">Bepul</h4>
             <ui-base-badge value="Faol" v-if="freeStatus"></ui-base-badge>
           </div>
           <p class="target-audience">Yosh biznesmenlar uchun</p>
@@ -42,7 +42,16 @@
                   alt="Check"
                 />
               </div>
-              <p>2 ta do'kon qo’shish imkoniyati</p>
+              <p>Qulay Interfeys</p>
+            </li>
+            <li>
+              <div class="icon-back">
+                <img
+                  src="https://ik.imagekit.io/pdaftar/Pdaftar/icon/check.png?updatedAt=1723398469928"
+                  alt="Check"
+                />
+              </div>
+              <p>Cheklanmagan bizneslar qo’shish imkoniyati</p>
             </li>
             <li>
               <div class="icon-back">
@@ -60,16 +69,7 @@
                   alt="Check"
                 />
               </div>
-              <p>Offline Ishlash Rejimi</p>
-            </li>
-            <li>
-              <div class="icon-back">
-                <img
-                  src="https://ik.imagekit.io/pdaftar/Pdaftar/icon/check.png?updatedAt=1723398469928"
-                  alt="Check"
-                />
-              </div>
-              <p>Qulay Interfeys</p>
+              <p>Online ishlash rejimi(tez kunda)</p>
             </li>
             <li class="line-throught">
               <div class="icon-back">
@@ -130,7 +130,16 @@
                   alt="Check"
                 />
               </div>
-              <p>5 ta do'kon qo’shish imkoniyati</p>
+              <p>Qulay Interfeys</p>
+            </li>
+            <li>
+              <div class="icon-back">
+                <img
+                  src="https://ik.imagekit.io/pdaftar/Pdaftar/icon/check.png?updatedAt=1723398469928"
+                  alt="Check"
+                />
+              </div>
+              <p>Cheklanmagan bizneslar qo’shish imkoniyati</p>
             </li>
             <li>
               <div class="icon-back">
@@ -148,16 +157,7 @@
                   alt="Check"
                 />
               </div>
-              <p>Offline Ishlash Rejimi</p>
-            </li>
-            <li>
-              <div class="icon-back">
-                <img
-                  src="https://ik.imagekit.io/pdaftar/Pdaftar/icon/check.png?updatedAt=1723398469928"
-                  alt="Check"
-                />
-              </div>
-              <p>Qulay Interfeys</p>
+              <p>Online ishlash rejimi(tez kunda)</p>
             </li>
             <li>
               <div class="icon-back">
@@ -185,7 +185,7 @@
           </div>
           <p class="target-audience">Professional biznes egalari uchun</p>
           <p>Sizga bundan ham ko’proqlarini taklif qilishimizni istaysizmi?</p>
-          <h3>+998 71 123 45 67</h3>
+          <h3>+998 95 221 21 44</h3>
           <ui-base-button
             set-class="pricing-button"
             style="background-color: #182230"

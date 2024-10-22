@@ -75,9 +75,13 @@
           <li class="nav-item">
             <a href="#problem-solution" class="nav-link">Muammo va yechimlar</a>
           </li>
-          <li class="nav-item"><a href="#pricing" class="nav-link">Tariflar</a></li>
-          <li class="nav-item"><a href="#testimonial-section" class="nav-link">Fikrlar</a></li>
-          <li class="nav-item"><a href="#faq-section" class="nav-link">KSS</a></li>
+          <li class="nav-item">
+            <a href="#pricing" class="nav-link">Tarifflar</a>
+          </li>
+          <!-- <li class="nav-item"><a href="#testimonial-section" class="nav-link">Fikrlar</a></li> -->
+          <li class="nav-item">
+            <a href="#faq-section" class="nav-link">KSS</a>
+          </li>
         </ul>
       </nav>
 
@@ -96,7 +100,11 @@
           <li><a href="/ru" data-lang="ru">RU</a></li>
         </ul>
       </div>
-      <ui-base-button set-class="free-btn">Bepul sinab ko’rish</ui-base-button>
+      <a href="#app-down">
+        <ui-base-button set-class="free-btn"
+          >Bepul sinab ko’rish</ui-base-button
+        >
+      </a>
     </div>
     <ui-base-button
       :class="['hamburger-menu', { active: isMenuOpen }]"

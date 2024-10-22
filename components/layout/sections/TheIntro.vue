@@ -2,7 +2,7 @@
   <ui-base-container>
     <div class="content">
       <a class="offer" href="#">
-        Birinchi 3 ta biznes mutlaqo tekin
+        Cheksiz bizneslar uchun tekin
         <svg
           width="24"
           height="25"
@@ -25,7 +25,9 @@
       </p>
       <div class="get-app">
         <ui-phone-input-mask></ui-phone-input-mask>
-        <ui-base-button set-class="down-app">Ilovani yuklab oling</ui-base-button>
+        <ui-base-button set-class="down-app"
+          >Ilovani yuklab oling</ui-base-button
+        >
       </div>
       <div class="customer-satisfaction">
         <ul>
@@ -39,7 +41,7 @@
           </li>
         </ul>
         <div class="satisfaction-text">
-          <span>21k</span>
+          <span>10+</span>
           <p>Mijozlar mamnun</p>
         </div>
       </div>
@@ -125,7 +127,7 @@ export default {
         {
           id: this.uniqueId,
           photo: null,
-          value: "+5",
+          value: "5+",
         },
       ],
       isSticky: false,
